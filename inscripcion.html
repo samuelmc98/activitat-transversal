@@ -1,0 +1,60 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<link rel="stylesheet" type="text/css" href="insc.css"> 
+<script src="code.js"></script>
+</head>  
+<body>  
+<form action="inscripcion.php" method="POST"  onsubmit="return validacionForm()"> 
+<div class="row">  
+    <hr>
+    <div class="column">   
+        <input type="text" name="fdni" placeholder= "DNI" size="15" id="fdni"> 
+    </div>
+    <div class="column">    
+        <input type="text" name="fnom" placeholder="Nom..." size="15" id="fnom"> 
+    </div>
+    <div class="column">        
+        <input type="text" name="apellido1" placeholder="Primer cognom..." size="15" id="apellido1">
+    </div>
+    <div class="column">  
+        <input type="text" name="apellido2" placeholder="Segon cognom..." size="15" id="apellido2">
+    </div>
+    <div class="column">  
+        <input type="date" id="start" name="fdata"
+        value="dd/mm/aaaa"
+        min="2020-11-11" max="2021-06-31">
+    </div>
+    <div class="column"> 
+    <input type="text" placeholder="Mail.." name="femail" id="femail">
+    </div>
+</div>
+<div class="row2">          
+    <div class="column"> 
+        <select class="insc" name="fsexe" id="fsexe"> 
+            <option value="Home">Home</option>  
+            <option value="Dona">Dona</option>  
+            <option value="Indefinit">Indefinit</option>  
+        </select> 
+    </div> 
+    <div class="column">  
+        <select class="insc" name="fcateoria" id="fcategoria">
+            <option value="0-6">0-6 anys</option>  
+            <option value="7-12">7-12 anys</option>  
+            <option value="13-18">13-18 anys</option> 
+            <option value="19-30">19-30 anys</option>  
+            <option value="31-45">31-45 anys</option>  
+            <option value="46-59">46-59 anys</option> 
+            <option value="+60">+60 anys</option>  
+        </select>
+    </div>  
+</div>  
+ 
+
+ 
+    <button type="submit" class="registerbtn">Registrarse</button> 
+<div id="message"></div>  
+</form>  
+</body>  
+</html>  
